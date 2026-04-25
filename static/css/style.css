@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: #F9F8F6;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    border-right-style: solid;
+    border-color: rgba(0, 0, 0, 0.081);
+    border-width: 1.5px;
+
+    min-width: 25%;
+}
+aside a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+
+    color: black;
+
+    border-width: 1px;
+}
+.placeholder {
+    min-height: 135px;
+    max-width: 80%;
+    min-width: 80%;
+    background-color: grey;
+
+    margin-top: 20px;
+
+    background-image: url("");
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.profile h2 {
+    text-align: center;
+    font-family: "Goldman", sans-serif;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact a {
+    border-style: solid;
+
+    height: 37px;
+
+    display: flex;
+
+    padding: 2px;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+
+    background-color: white;
+
+}
+.social {
+    display: flex;
+}
+.social a {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    
+}
+.social a:nth-child(1) {
+    margin-right: 5px;
+}
+.contact > a {
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.social img {
+    height: 30px;
+}
+
+.nav {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.nav a {
+    font-size: 1.3em;
+
+    margin-bottom: 45px;
+}
+
+main {
+    width: 100%;
+
+}
+section {
+    margin-left: 2em;
+    margin-right: 2em;
+    font-family: "Roboto Mono", monospace;
+}
+
+
+section:not(:last-child)::after {
+  content: "..."; 
+  display: flex;
+
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 10px;
+  margin-top: 20px;
+  
+  color: #555;
+
+  justify-self: center;
+}
+
+#info-box {
+    background-color: white;
+    
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1.5px;
+    max-width: 93%;
+
+    padding: 1em;
+}
+
+#info-box span {
+    font-weight: bold;
+}
+#info-box p {
+    font-family: "Roboto", sans-serif;
+}
+
+section:last-child #info-box {
+    display: inline-block;
+    font-size: small;
+    margin-right: 10px;
+    margin-top: 10px;
+} 
+section:last-child #info-box span::before {
+    content: "#";
+    margin-right: 6px;
+
+    color: grey;
+} 
+.date {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+
+    font-size: small;
+    font-style: italic;
+}
+
+@media screen and (max-width: 915px) {
+    body {
+        flex-direction: column;
+    }
+}
